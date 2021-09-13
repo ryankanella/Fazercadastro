@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro no Auxílio Emergencial</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"> 
+    
+</head>
+<body>
+    <div id="logo"><img src="./img/logoGoverno.png" width="25%"></div>
+
+    <div id="menu">
+        <a href="">Previdência</a>
+        <a href="">Imposto de Renda</a>
+        <a href="">Legislação</a>
+        <a href="">INSS</a>
+    </div>
+
+
+    <div id="cadastro"> 
+        <h1>Cadastre seus dados</h1>
+        <form action="file:///C:/Users/Ryan/Desktop/trabalho%20softwarer/index2.html" method="POST">
+            <label>Nome</label><br>
+            <input type="text" name="nome" id="nome" required><br><br>
+
+            <label>CPF</label><br>
+            <input type="text" name="cpf" id="cpf" required><br><br>
+
+            <label>Número de dependentes</label><br>
+            <input type="number" name="qntDependentes" id="qntDependentes" required><br><br>
+
+            <label>Telefone</label><br>
+            <input type="tel" name="tel" id="tel" required><br><br>
+
+            <label>E-mail</label><br>
+            <input type="email" name="email" id="email" required><br><br>
+
+            <input type="hidden" name="Enviar" value="file:///C:/Users/Ryan/Desktop/trabalho%20softwarer/index2.html">
+            <button type="submit" onclick="validacao()">Enviar</button>
+        </form>
+
+    </div>
+
+    <hr>
+
+    <div id="info">
+        <Center>
+         
+         <table>
+            <tr>
+                <th>Quem tem direito ao auxílio?</th>
+            </tr>
+            <tr>
+                <td>O Auxílio Emergencial 2021 será pago independentemente de solicitação para a pessoa que, em dezembro de 2020, estava elegível para recebimento do Auxílio Emergencial ou Auxílio Emergencial Extensão e que não esteja enquadrado em nenhuma das situações listadas no item seguinte.</td>
+            </tr>
+            <tr>
+                <th>Como será feito o pagamento?</th>
+            </tr>
+            <tr>
+                <td>Da mesma forma que o pagamento do Auxílio Emergencial ou Auxílio Emergencial Extensão, ou seja, o valor será creditado em Conta Poupança Social Digital e poderá ser utilizado por meio do Caixa Tem. Para os beneficiários do Programa Bolsa Família que passarão a receber o novo Auxílio Emergencial, o pagamento será feito da mesma forma do Programa Bolsa Família.</td>
+            </tr>
+            <tr>
+               <th>Qual o impacto no Bolsa Família?</th>
+            </tr>
+            <tr>
+                <td>Nas situações em que for mais vantajoso para a família, o Auxílio Emergencial 2021 substituirá, temporariamente, o benefício do Programa Bolsa Família, ainda que haja um único beneficiário no grupo familiar.</td>
+            </tr>
+         </table>
+        </Center>
+    </div>
+    
+            
+    <footer>
+        <h1>Confirmação de cadastro TESTE</h1>
+    </footer>
+
+    <script>
+        function validacao() {
+            var nome = document.getElementById("nome")
+            var cpf = document.getElementById("cpf")
+            var qntDependentes = document.getElementById("qntDependentes")
+            var tel = document.getElementById("tel")
+            var email = document.getElementById("email")
+
+            if (nome.value == "") {
+                alert("Nome não informado!")
+            }
+
+            if (cpf.value == "") {
+                alert("CPF não informado!")
+            }
+
+            if (qntDependentes.value < 0) {
+                alert("Número de dependentes não pode ser menor do que zero!")
+            }
+
+            if (tel.value == "") {
+                alert("Telefone não informado!")
+            }
+
+            if (email.value == "") {
+                alert("Email não informado!")
+            }
+        }
+    </script>
+</body>
+</html>

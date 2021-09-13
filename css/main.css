@@ -1,0 +1,77 @@
+#logo {
+    text-align: center;
+    background-color: rgb(75, 161, 216);
+}
+
+div {
+    text-align: center;
+}
+
+#menu {
+    background-color: rgb(75, 161, 216);
+    padding: 8px;
+}
+
+a {
+    padding: 8px;
+    font-size: 25px;
+}
+
+a:hover {
+    color: yellow; 
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    font-size: 18px;
+}
+
+td, th {
+    padding-top: 8px;
+}
+
+table {
+    text-align: center;
+    width: 60%;
+    padding-bottom: 2px;
+    background-color: rgb(209, 203, 203)
+}
+
+hr {
+    box-shadow: 1px 1px gray;
+}
+
+#cadastro {
+    padding-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 4px;
+    background-color: rgb(75, 161, 216);
+    color: white;
+}
+
+button {
+    padding: 8px;
+}
+
+#info {
+    background-color: rgb(209, 203, 203);
+}
+
+#feedback {
+    text-align: center;
+    background-color: rgb(209, 203, 203);
+    padding-top: 290px;
+    padding-bottom: 290px;
+}
+
+#listfeedback {
+    list-style-type: none;
+    padding-top: 250px; 
+    padding-bottom: 250px;
+}
